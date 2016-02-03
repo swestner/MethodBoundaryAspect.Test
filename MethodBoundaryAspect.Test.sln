@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodBoundaryAspect.Core", "MethodBoundaryAspect.Core\MethodBoundaryAspect.Core.csproj", "{07EAA79D-CB9D-4A7F-AB1B-E540775A0FDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodBoundaryAspect.Tests", "MethodBoundaryAspect.Tests\MethodBoundaryAspect.Tests.csproj", "{2F8AFF8A-A6DC-4405-B269-90B30B6EF261}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07EAA79D-CB9D-4A7F-AB1B-E540775A0FDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07EAA79D-CB9D-4A7F-AB1B-E540775A0FDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07EAA79D-CB9D-4A7F-AB1B-E540775A0FDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07EAA79D-CB9D-4A7F-AB1B-E540775A0FDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F8AFF8A-A6DC-4405-B269-90B30B6EF261}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F8AFF8A-A6DC-4405-B269-90B30B6EF261}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F8AFF8A-A6DC-4405-B269-90B30B6EF261}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F8AFF8A-A6DC-4405-B269-90B30B6EF261}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
