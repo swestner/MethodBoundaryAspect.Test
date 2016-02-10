@@ -9,25 +9,18 @@ namespace MethodBoundaryAspect.Tests
         public static string StringResult => "success";
         public static int DelayInterval => 100;
 
-        [ExceptionAttribute(TranslationKey = "fun")]
+        [ExceptionAttribute(ExceptionType = typeof(NullReferenceException), TranslationKey = "EN_WHATEVER")]
         public void Method()
         {
             throw new NullReferenceException();
         }
 
-        //[ExceptionAttribute(ExceptionType = typeof(NullReferenceException), TranslationKey = "EN_WHATEVER")]
+        [ExceptionAttribute(ExceptionType = typeof(NullReferenceException), TranslationKey = "EN_WHATEVER")]
         public async Task AsyncMethod()
         {
             await Delay();
             throw new NullReferenceException();
-        }
-
-        //[ExceptionAttribute(ExceptionType = typeof(NullReferenceException), TranslationKey = "EN_WHATEVER")]
-        public async Task<string> AsyncMethodWithReturn()
-        {
-            await Delay();
-            return StringResult;
-        }
+        }       
 
         public Task Delay()
         {

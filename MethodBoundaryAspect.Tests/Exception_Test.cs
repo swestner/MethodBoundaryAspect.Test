@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace MethodBoundaryAspect.Tests
 {
   [TestClass]
-  public class DangerException_Test
+  public class Exception_Test
   {
     static TestStub _sut;
 
@@ -18,26 +18,17 @@ namespace MethodBoundaryAspect.Tests
     }
 
     [TestMethod]                 
-    [ExpectedException(exceptionType:typeof(NullReferenceException))]
+    [ExpectedException(exceptionType:typeof(DangerException))]
     public void Test_Sync_Void()
     { 
       _sut.Method();    
     }
 
     [TestMethod]
-    [ExpectedException(exceptionType: typeof(NullReferenceException))]
+    [ExpectedException(exceptionType: typeof(DangerException))]
     public async Task Test_Async_Task()
     {     
       await _sut.AsyncMethod();      
     }
-
-    [TestMethod]
-    public async Task Test_Async_Task_Value_Returned()
-    {
-      var result = await _sut.AsyncMethodWithReturn();
-      Assert.AreEqual(result, TestStub.StringResult);
-    }
-
-
   }
 }
