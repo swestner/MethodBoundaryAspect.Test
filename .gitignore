@@ -179,3 +179,4 @@ uploads
 */**/cc.config
 /.nuget
 /CC.Services/cc.config
+.vs
